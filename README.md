@@ -9,12 +9,11 @@ Welcome to the **AI-Based Movie Personalization Engine**. This project is a coll
 
 ## ✨ Features
 - **Hybrid Recommendation Algorithm:** Combines collaborative filtering (user-item interactions) with content-based filtering (genre, director, cast, and plot).
-- **Robust Data Pipeline:** Efficiently processes large datasets of movie ratings and metadata using optimized dataframes.
 - **Interactive Visualization:** Includes a dedicated analytics dashboard to monitor recommendation accuracy, catalog trends, and user engagement metrics.
 - **Scalable Database Architecture:** Utilizes a custom star schema optimized for fast analytical queries and secure view generation.
 
 ## 🛠️ Tech Stack
-- **Language:** Python (Pandas, NumPy, Scikit-Learn)
+- **Language:** Python (Pandas, NumPy)
 - **Visualization:** Tableau Public
 - **Version Control:** Git & GitHub (Feature-branch workflow)
 
@@ -32,10 +31,9 @@ Welcome to the **AI-Based Movie Personalization Engine**. This project is a coll
    ```
 
 ## 🧠 Model Architecture & Data Flow
-Our engine processes data in three main stages:
-1. **Data Ingestion & Cleaning:** Raw datasets (e.g., MovieLens, TMDB) are ingested, cleaned via automated Python scripts, and mapped into our PostgreSQL database.
-2. **Feature Engineering:** We extract TF-IDF vectors for text-heavy features (like overviews) and encode categorical metadata to build comprehensive item profiles.
-3. **Training & Inference:** A matrix factorization model computes latent user/item factors, dynamically generating a top-N recommendation list for any given user ID.
+Our engine processes data in 2 main stages:
+1. **Feature Engineering:** We extract TF-IDF vectors for text-heavy features (like overviews) and encode categorical metadata to build comprehensive item profiles.
+2. **Training & Inference:** A matrix factorization model computes latent user/item factors, dynamically generating a top-N recommendation list for any given user ID.
 
 ## 📊 Analytics Dashboard
 We maintain a connected **Tableau** dashboard to visualize:
@@ -45,8 +43,8 @@ We maintain a connected **Tableau** dashboard to visualize:
 
 ## 🤝 Collaboration Workflow
 As a two-person development team, we divide responsibilities to ensure smooth integration:
-- **Developer 1 (Data & Analytics):** Focuses on the PostgreSQL data pipeline, schema design, exploratory data analysis (EDA), and Tableau visual reporting.
-- **Developer 2 (ML & Engineering):** Focuses on algorithmic model training in Python, feature engineering, and recommendation endpoint development.
+- **Derek Pursell (Data & Analytics):** Focuses on schema design, exploratory data analysis (EDA), and Tableau visual reporting.
+- **Ioinaz Lichtenstein(ML & Engineering):** Focuses on algorithmic model training in Python, feature engineering, and recommendation endpoint development.
 
 *Both developers enforce strict code reviews via GitHub Pull Requests before merging to the `main` branch.*
 
