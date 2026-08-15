@@ -1,4 +1,5 @@
 import json
+
 import pandas as pd
 
 
@@ -29,6 +30,15 @@ viewing_history["rating"] = viewing_history["rating"].astype(int)
 viewing_history = viewing_history[
     viewing_history["rating"].between(1, 5)
 ]
+
+viewing_history["timestamp"] = pd.to_datetime(
+    viewing_history["timestamp"],
+    errors="coerce"
+)
+
+viewing_history = viewing_history.dropna(
+    subset=["timestamp"]
+)
 
 
 valid_movie_ids = set(movies["movie_id"])
@@ -84,6 +94,7 @@ movie_stats = (
 movie_stats["average_user_rating"] = (
     movie_stats["average_user_rating"].round(2)
 )
+
 
 processed_movies = movies.merge(
     movie_stats,
@@ -146,6 +157,7 @@ user_movie_data.to_csv(
     "user_movie_data.csv",
     index=False
 )
+
 
 with open("clean_users.json", "w") as file:
     json.dump(clean_users, file, indent=4)
