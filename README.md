@@ -9,12 +9,11 @@ Welcome to the **AI-Based Movie Personalization Engine**. This project is a coll
 
 ## ✨ Features
 - **Hybrid Recommendation Algorithm:** Combines collaborative filtering (user-item interactions) with content-based filtering (genre, director, cast, and plot).
-- **Interactive Visualization:** Includes a dedicated analytics dashboard to monitor recommendation accuracy, catalog trends, and user engagement metrics.
-- **Scalable Database Architecture:** Utilizes a custom star schema optimized for fast analytical queries and secure view generation.
+- **Interactive Visualization:** Includes a built-in analytics dashboard to monitor recommendation accuracy, catalog trends, and user engagement metrics.
 
 ## 🛠️ Tech Stack
 - **Language:** Python (Pandas, NumPy)
-- **Visualization:** Tableau Public
+- **Visualization:** VS Code & Google Colab
 - **Version Control:** Git & GitHub (Feature-branch workflow)
 
 ## 🚀 Installation & Setup
@@ -30,21 +29,15 @@ Welcome to the **AI-Based Movie Personalization Engine**. This project is a coll
    cd movie-personalization-engine
    ```
 
-## 🧠 Model Architecture & Data Flow
-Our engine processes data in 2 main stages:
-1. **Feature Engineering:** We extract TF-IDF vectors for text-heavy features (like overviews) and encode categorical metadata to build comprehensive item profiles.
-2. **Training & Inference:** A matrix factorization model computes latent user/item factors, dynamically generating a top-N recommendation list for any given user ID.
-
 ## 📊 Analytics Dashboard
-We maintain a connected **Tableau** dashboard to visualize:
-- Decadal shifts in genre popularity and release trends.
+We created a chart dashboard to visualize:
 - Recommendation hit rates and algorithmic precision metrics.
 - User rating distributions across different demographic clusters.
 
 ## 🤝 Collaboration Workflow
 As a two-person development team, we divide responsibilities to ensure smooth integration:
-- **Derek Pursell (Data & Analytics):** Focuses on schema design, exploratory data analysis (EDA), and Tableau visual reporting.
-- **Ioinaz Lichtenstein(ML & Engineering):** Focuses on algorithmic model training in Python, feature engineering, and recommendation endpoint development.
+- **Derek Pursell (Data & Analytics):** Focuses on schema design, exploratory data analysis (EDA), and visual reporting.
+- **Ioinaz Lichtenstein(ML & Engineering):** Focuses on AI engine training in Python, feature engineering, and recommendation endpoint development.
 
 *Both developers enforce strict code reviews via GitHub Pull Requests before merging to the `main` branch.*
 
