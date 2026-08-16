@@ -1,7 +1,6 @@
 # 🎬 AI-Based Movie Personalization Engine
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange.svg)](https://www.tableau.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## 📖 Overview
